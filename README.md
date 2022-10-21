@@ -43,12 +43,16 @@ flask run
             *TIP: Refer to slide 14  
     * get(“/all”) - returns events currently stored in the API
     * post(“/event”) - Adds an event to the end of the events dictionary stored in the API
+    
             * `request.json` contains the data you add in the form
             * puts the data into a new key-value pair in events
             * returns the index in string format  
+            
     * put(“/event/<event_id>”)
+    
             * takes in 1 argument called event_id of int type
             * adds the data in `request.json` to events and returns it 
+            
     * delete(“/event/<event_id>”)
             * takes in 1 argument called event_id of int type
             * deletes the key-value pair with the id passed in
